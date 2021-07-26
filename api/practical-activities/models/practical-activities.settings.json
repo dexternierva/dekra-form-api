@@ -1,0 +1,368 @@
+{
+  "kind": "collectionType",
+  "collectionName": "practical_activities",
+  "info": {
+    "name": "Practical Activities",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "a1": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 0
+    },
+    "a2": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a3": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a4": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a5": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a6": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a7": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a8": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a9": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "a10": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b1": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b2": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b3": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b4": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b5": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b6": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b7": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b8": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b9": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b10": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b11": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "b12": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c1": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c2": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c3": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c4": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c5": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c6": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c7": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c8": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c9": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c10": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c11": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c12": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c13": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "c14": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d1": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d2": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d3": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d4": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d5": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d6": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d7": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d8": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "d9": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "e1": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "e2": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "e3": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "e4": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "e5": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "e6": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "f1": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "f2": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "f3": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "f4": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "f5": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "f6": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "f7": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "user": {
+      "via": "practical_activity",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

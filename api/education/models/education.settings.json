@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educations",
+  "info": {
+    "name": "Education",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "course": {
+      "type": "string"
+    },
+    "university": {
+      "type": "string"
+    },
+    "user": {
+      "via": "educations",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

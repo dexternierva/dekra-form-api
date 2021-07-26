@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/practical-activities",
+      "handler": "practical-activities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practical-activities/count",
+      "handler": "practical-activities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practical-activities/:id",
+      "handler": "practical-activities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/practical-activities",
+      "handler": "practical-activities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/practical-activities/:id",
+      "handler": "practical-activities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/practical-activities/:id",
+      "handler": "practical-activities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

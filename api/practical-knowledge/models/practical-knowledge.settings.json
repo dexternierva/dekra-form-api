@@ -1,0 +1,349 @@
+{
+  "kind": "collectionType",
+  "collectionName": "practical_knowledges",
+  "info": {
+    "name": "Practical Knowledge",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "care": {
+      "type": "boolean",
+      "default": false
+    },
+    "internalmedicine": {
+      "type": "boolean",
+      "default": false
+    },
+    "pediatrics": {
+      "type": "boolean",
+      "default": false
+    },
+    "generalaccidentsurgery": {
+      "type": "boolean",
+      "default": false
+    },
+    "anesthesia": {
+      "type": "boolean",
+      "default": false
+    },
+    "orthopedics": {
+      "type": "boolean",
+      "default": false
+    },
+    "emergency": {
+      "type": "boolean",
+      "default": false
+    },
+    "op": {
+      "type": "boolean",
+      "default": false
+    },
+    "neurology": {
+      "type": "boolean",
+      "default": false
+    },
+    "geriatrics": {
+      "type": "boolean",
+      "default": false
+    },
+    "patientwashing": {
+      "type": "boolean",
+      "default": false
+    },
+    "patientstorage": {
+      "type": "boolean",
+      "default": false
+    },
+    "mobilization": {
+      "type": "boolean",
+      "default": false
+    },
+    "helpwithfood": {
+      "type": "boolean",
+      "default": false
+    },
+    "prophylaxis": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionalbasiccare1": {
+      "type": "string"
+    },
+    "additionalbasiccare2": {
+      "type": "string"
+    },
+    "additionalbasiccare3": {
+      "type": "string"
+    },
+    "additionalbasiccare4": {
+      "type": "string"
+    },
+    "additionalbasiccare5": {
+      "type": "string"
+    },
+    "oxygentherapy": {
+      "type": "boolean",
+      "default": false
+    },
+    "assessingbreathing": {
+      "type": "boolean",
+      "default": false
+    },
+    "inhalation": {
+      "type": "boolean",
+      "default": false
+    },
+    "thoraxdrainage": {
+      "type": "boolean",
+      "default": false
+    },
+    "tracheostoma": {
+      "type": "boolean",
+      "default": false
+    },
+    "suction": {
+      "type": "boolean",
+      "default": false
+    },
+    "ventilators": {
+      "type": "boolean",
+      "default": false
+    },
+    "settingventilators": {
+      "type": "boolean",
+      "default": false
+    },
+    "beatmungsformen": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionalbreathing": {
+      "type": "string"
+    },
+    "rrmeasurement": {
+      "type": "boolean",
+      "default": false
+    },
+    "measuringtemperature": {
+      "type": "boolean",
+      "default": false
+    },
+    "measuringblood": {
+      "type": "boolean",
+      "default": false
+    },
+    "monitor": {
+      "type": "boolean",
+      "default": false
+    },
+    "pulsoxymeter": {
+      "type": "boolean",
+      "default": false
+    },
+    "ecg": {
+      "type": "boolean",
+      "default": false
+    },
+    "readassess": {
+      "type": "boolean",
+      "default": false
+    },
+    "bloodglucose": {
+      "type": "boolean",
+      "default": false
+    },
+    "devicesmonitor": {
+      "type": "boolean",
+      "default": false
+    },
+    "devicespulsoxymeter": {
+      "type": "boolean",
+      "default": false
+    },
+    "schmerzpumpe": {
+      "type": "boolean",
+      "default": false
+    },
+    "infusomat": {
+      "type": "boolean",
+      "default": false
+    },
+    "perfusor": {
+      "type": "boolean",
+      "default": false
+    },
+    "vacuumpump": {
+      "type": "boolean",
+      "default": false
+    },
+    "pharmacology": {
+      "type": "boolean",
+      "default": false
+    },
+    "oraladministration": {
+      "type": "boolean",
+      "default": false
+    },
+    "rektalegabe": {
+      "type": "boolean",
+      "default": false
+    },
+    "subcutaneous": {
+      "type": "boolean",
+      "default": false
+    },
+    "intramuscular": {
+      "type": "boolean",
+      "default": false
+    },
+    "intravenously": {
+      "type": "boolean",
+      "default": false
+    },
+    "infusion": {
+      "type": "boolean",
+      "default": false
+    },
+    "centralvenous": {
+      "type": "boolean",
+      "default": false
+    },
+    "feedingtube": {
+      "type": "boolean",
+      "default": false
+    },
+    "notfallmedikamente": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionalmedication1": {
+      "type": "string"
+    },
+    "additionalmedication2": {
+      "type": "string"
+    },
+    "additionalmedication3": {
+      "type": "string"
+    },
+    "urogenitalbereich": {
+      "type": "boolean",
+      "default": false
+    },
+    "onetimecatheter": {
+      "type": "boolean",
+      "default": false
+    },
+    "permanentcatheter": {
+      "type": "boolean",
+      "default": false
+    },
+    "suprapubiccatheter": {
+      "type": "boolean",
+      "default": false
+    },
+    "hurine": {
+      "type": "boolean",
+      "default": false
+    },
+    "excretioninfusion": {
+      "type": "boolean",
+      "default": false
+    },
+    "condomurinal": {
+      "type": "boolean",
+      "default": false
+    },
+    "magendarmtrakt": {
+      "type": "boolean",
+      "default": false
+    },
+    "caregastricprobe": {
+      "type": "boolean",
+      "default": false
+    },
+    "transnasalgastric": {
+      "type": "boolean",
+      "default": false
+    },
+    "careofpeg": {
+      "type": "boolean",
+      "default": false
+    },
+    "careofstoma": {
+      "type": "boolean",
+      "default": false
+    },
+    "intestinalrinsing": {
+      "type": "boolean",
+      "default": false
+    },
+    "stateofconsciousness": {
+      "type": "boolean",
+      "default": false
+    },
+    "carestroke": {
+      "type": "boolean",
+      "default": false
+    },
+    "cerebralhemorrhage": {
+      "type": "boolean",
+      "default": false
+    },
+    "caringparkinson": {
+      "type": "boolean",
+      "default": false
+    },
+    "carebraintumor": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionalneurology": {
+      "type": "string"
+    },
+    "asepticdressing": {
+      "type": "boolean",
+      "default": false
+    },
+    "septicdressing": {
+      "type": "boolean",
+      "default": false
+    },
+    "pullingthreads": {
+      "type": "boolean",
+      "default": false
+    },
+    "removebrackets": {
+      "type": "boolean",
+      "default": false
+    },
+    "woundassessment": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionalwoundtreatment": {
+      "type": "string"
+    },
+    "user": {
+      "via": "practical_knowledge",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "additionaldepartment1": {
+      "type": "string"
+    },
+    "additionaldepartment2": {
+      "type": "string"
+    },
+    "additionalvitalsign": {
+      "type": "string"
+    },
+    "additionaldevices": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/practical-knowledges",
+      "handler": "practical-knowledge.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practical-knowledges/count",
+      "handler": "practical-knowledge.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practical-knowledges/:id",
+      "handler": "practical-knowledge.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/practical-knowledges",
+      "handler": "practical-knowledge.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/practical-knowledges/:id",
+      "handler": "practical-knowledge.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/practical-knowledges/:id",
+      "handler": "practical-knowledge.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

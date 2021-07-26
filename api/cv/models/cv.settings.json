@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cvs",
+  "info": {
+    "name": "Cv",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "kfDegree": {
+      "type": "string"
+    },
+    "kfLanguage": {
+      "type": "string"
+    },
+    "kfExperienceYear": {
+      "type": "integer"
+    },
+    "kfExperienceMonth": {
+      "type": "integer"
+    },
+    "kfPriorities": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "placeOfBirth": {
+      "type": "string"
+    },
+    "maritalStatus": {
+      "type": "string"
+    },
+    "trainingFrom": {
+      "type": "date"
+    },
+    "trainingTo": {
+      "type": "date"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "string"
+    },
+    "nativeLanguage": {
+      "type": "string"
+    },
+    "germanLanguageLevel": {
+      "type": "string"
+    },
+    "germanLanguageDate": {
+      "type": "date"
+    },
+    "germanCare": {
+      "type": "date"
+    },
+    "otherLanguages": {
+      "type": "string"
+    },
+    "otherLanguagesLevel": {
+      "type": "string"
+    },
+    "computerSkills": {
+      "type": "string"
+    },
+    "otherComputerSkills": {
+      "type": "string"
+    },
+    "personalSkills": {
+      "type": "string"
+    },
+    "drivingLicense": {
+      "type": "string"
+    },
+    "user": {
+      "via": "cv",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "kfParticipantId": {
+      "type": "string"
+    },
+    "kfCategory": {
+      "type": "string"
+    }
+  }
+}
