@@ -143,7 +143,7 @@ module.exports = {
 
         ctx.cookies.set("token", token, {
           httpOnly: true,
-          secure: false,
+          secure: process.env.NODE_ENV === "production" ? true : false,
           maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
           domain: process.env.NODE_ENV === "development" ? "localhost" : process.env.PRODUCTION_URL,
         });
@@ -155,9 +155,6 @@ module.exports = {
             model: strapi.query('user', 'users-permissions').model,
           }),
         });
-
-        /** RECENTLY ADDED THE FOLLOWING CODE 27-07-2021 */
-        ctx.set('Access-Control-Allow-Origin', ctx.request.headers.origin);
 
         /** END OF CUSTOMIZATION */
       }
