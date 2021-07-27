@@ -156,6 +156,8 @@ module.exports = {
           }),
         });
 
+        console.log("token variable inside Auth.js: ", token);
+
         /** END OF CUSTOMIZATION */
       }
     } else {
