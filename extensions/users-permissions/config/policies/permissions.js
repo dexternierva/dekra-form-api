@@ -16,6 +16,8 @@ module.exports = async (ctx, next) => {
     if (token) {
       ctx.request.header.authorization = "Bearer " + token;
     }
+
+    console.log("token variable inside permissions.js: ", token);
   }
   /** END OF CUSTOMIZATION */
 
