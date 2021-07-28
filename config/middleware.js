@@ -32,7 +32,10 @@ module.exports = ({ env }) => ({
   settings: {
     cors: {
       enabled: true,
-      origin: ["https://dekra-form-8a7iy.ondigitalocean.app", "https://dekra-form-api-m8bsw.ondigitalocean.app"],
+      origin: [
+        env("CLIENT_URL", "https://dekra-form-8a7iy.ondigitalocean.app"),
+        env("API_URL", "https://dekra-form-api-m8bsw.ondigitalocean.app"),
+      ],
     },
     cookieGetter: {
       enabled: true,
@@ -59,7 +62,7 @@ module.exports = (strapi) => {
             secure: process.env.NODE_ENV === "production",
             maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
             domain: process.env.CLIENT_HOSTNAME,
-            sameSite: process.env.NODE_ENV === "development" ? true : "none",
+            sameSite: "none",
             overwrite: true,
           });
         }
