@@ -145,7 +145,7 @@ module.exports = {
           httpOnly: true,
           secure: process.env.NODE_ENV === "production" ? true : false,
           maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
-          domain: "dekra-form-api-m8bsw.ondigitalocean.app",
+          domain: "ondigitalocean.app",
           sameSite: "none",
         });
 
