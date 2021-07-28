@@ -156,7 +156,7 @@ module.exports = {
           }),
         });
 
-        console.log("token variable inside Auth.js: ", token);
+        console.log("token variable inside Auth.js: ", ctx.cookies.get('token'));
 
         /** END OF CUSTOMIZATION */
       }

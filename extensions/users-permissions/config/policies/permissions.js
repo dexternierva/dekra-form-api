@@ -12,6 +12,7 @@ module.exports = async (ctx, next) => {
 
   /** START OF CUSTOMIZATION */
   if (ctx.request && ctx.request.header && !ctx.request.header.authorization) {
+    console.log("ctx.cookies.get('token') inside permissions.js: ", ctx.cookies.get("token"));
     const token = ctx.cookies.get("token");
     if (token) {
       ctx.request.header.authorization = "Bearer " + token;
