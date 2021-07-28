@@ -42,9 +42,9 @@ module.exports = (strapi) => {
           const { jwt: jwtToken } = ctx.response.body;
           ctx.cookies.set("token", jwtToken, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
+            secure: process.env.NODE_ENV === "production" ? true : false,
             maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
-            domain: "dekra-form-8a7iy.ondigitalocean.app",
+            domain: "dekra-form-api-m8bsw.ondigitalocean.app",
             sameSite: process.env.NODE_ENV === "development" ? true : "none",
             overwrite: true,
           });
