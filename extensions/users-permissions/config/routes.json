@@ -1,12 +1,9 @@
 {
-	"routes": [
-		{
-			"method": "POST",
-			"path": "/refreshToken",
-			"handler": "Auth.refreshToken",
-			"config": {
-				"policies": []
-			}
-		}
-	]
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/logout",
+      "handler": "Custom.logout"
+    }
+  ]
 }
