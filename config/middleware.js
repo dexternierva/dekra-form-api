@@ -15,10 +15,7 @@ module.exports = ({ env }) => ({
   },
   settings: {
     cors: {
-      origin: [
-        env("CLIENT_URL", "http://localhost:8080"),
-        env("API_URL", "http://localhost:1337"),
-      ],
+      origin: ['https://dekra-form-api-m8bsw.ondigitalocean.app/', 'https://dekra-form-8a7iy.ondigitalocean.app/'],
     },
     cookieGetter: {
       enabled: true,
