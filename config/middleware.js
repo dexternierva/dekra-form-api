@@ -8,12 +8,17 @@ module.exports = ({ env }) => ({
       "responses",
       "gzip",
     ],
-    order: [ "cookieSetter", "cookieGetter" ],
+    order: [
+      "Define the middlewares' load order by putting their name in this array is the right order",
+    ],
     after: ["parser", "router", "cookieSetter"],
   },
   settings: {
     cors: {
-      origin: ["https://dekra-form-8a7iy.ondigitalocean.app", "https://dekra-form-api-m8bsw.ondigitalocean.app"],
+      origin: [
+        env("CLIENT_URL", "http://localhost:8080"),
+        env("API_URL", "http://localhost:1337"),
+      ],
     },
     cookieGetter: {
       enabled: true,
@@ -37,9 +42,9 @@ module.exports = (strapi) => {
           const { jwt: jwtToken } = ctx.response.body;
           ctx.cookies.set("token", jwtToken, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production" ? true : false,
+            secure: process.env.NODE_ENV === "production",
             maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
-            domain: "dekra-form-8a7iy.ondigitalocean.app",
+            domain: process.env.CLIENT_HOSTNAME,
             sameSite: process.env.NODE_ENV === "development" ? true : "none",
             overwrite: true,
           });
