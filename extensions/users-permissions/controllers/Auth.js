@@ -151,7 +151,8 @@ module.exports = {
           // sameSite: process.env.NODE_ENV === "development" ? true : "none",
           // domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
           (process.env.NODE_ENV === 'production' ? { domain: process.env.PRODUCTION_URL } : {}),
-          // sameSite: process.env.NODE_ENV === "development" ? "none" : true,
+          secure: true,
+          sameSite: "none",
           // overwrite: true,
         });
 
