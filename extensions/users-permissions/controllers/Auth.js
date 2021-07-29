@@ -144,13 +144,15 @@ module.exports = {
         ctx.cookies.set("token", token, {
           httpOnly: true,
           // secure: process.env.NODE_ENV === "production" ? true : false,
-          secure: process.env.NODE_ENV === "development" ? true : false,
+          // secure: process.env.NODE_ENV === "development" ? true : false,
+          secure: process.env.NODE_ENV === 'production',
           maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
           // domain: process.env.NODE_ENV === "development" ? "localhost" : process.env.PRODUCTION_URL,
           // sameSite: process.env.NODE_ENV === "development" ? true : "none",
-          domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
-          sameSite: process.env.NODE_ENV === "development" ? "none" : true,
-          overwrite: true,
+          // domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
+          (process.env.NODE_ENV === 'production' ? { domain: process.env.PRODUCTION_URL } : {}),
+          // sameSite: process.env.NODE_ENV === "development" ? "none" : true,
+          // overwrite: true,
         });
 
         ctx.send({
