@@ -152,7 +152,7 @@ module.exports = {
           // domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
           (process.env.NODE_ENV === 'production' ? { domain: process.env.PRODUCTION_URL } : {}),
           secure: true,
-          sameSite: "none",
+          sameSite: "None",
           // overwrite: true,
         });
 
