@@ -145,14 +145,14 @@ module.exports = {
           httpOnly: true,
           // secure: process.env.NODE_ENV === "production" ? true : false,
           // secure: process.env.NODE_ENV === "development" ? true : false,
-          secure: process.env.NODE_ENV === 'production',
+          // secure: process.env.NODE_ENV === 'production',
           maxAge: 1000 * 60 * 60 * 24 * 14, // 14 Day Age
           // domain: process.env.NODE_ENV === "development" ? "localhost" : process.env.PRODUCTION_URL,
           // sameSite: process.env.NODE_ENV === "development" ? true : "none",
           // domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
-          (process.env.NODE_ENV === 'production' ? { domain: process.env.PRODUCTION_URL } : {}),
+          domain: 'dekra-form-8a7iy.ondigitalocean.app',
           secure: true,
-          sameSite: "None",
+          sameSite: "none",
           // overwrite: true,
         });
 
