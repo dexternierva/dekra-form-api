@@ -140,6 +140,7 @@ module.exports = {
         const token = strapi.plugins["users-permissions"].services.jwt.issue({
           id: user.id,
         });
+        console.log("token before ctx.cookies.set: ", token);
         console.log("*** process.env: ", process.env);
         ctx.cookies.set("token", token, {
           httpOnly: true,
@@ -151,7 +152,7 @@ module.exports = {
           // sameSite: process.env.NODE_ENV === "development" ? true : "none",
           // domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
           domain: 'dekra-form-8a7iy.ondigitalocean.app',
-          secure: true,
+          secure: false,
           sameSite: "none",
           // overwrite: true,
         });
