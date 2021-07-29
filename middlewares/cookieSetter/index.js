@@ -7,6 +7,7 @@ module.exports = (strapi) => {
           ctx.request.url.startsWith("/auth/") &&
           ctx.response.status === 200
         ) {
+          console.log("CTX.RESPONSE.BODY: ", ctx.response.body);
           const { jwt: jwtToken } = ctx.response.body;
           ctx.cookies.set("token", jwtToken, {
             httpOnly: true,
