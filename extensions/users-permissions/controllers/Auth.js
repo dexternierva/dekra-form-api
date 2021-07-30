@@ -151,7 +151,7 @@ module.exports = {
           // domain: process.env.NODE_ENV === "development" ? "localhost" : process.env.PRODUCTION_URL,
           // sameSite: process.env.NODE_ENV === "development" ? true : "none",
           // domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
-          domain: 'dekra-form-8a7iy.ondigitalocean.app',
+          domain: 'ondigitalocean.app',
           secure: false,
           sameSite: "none",
           // overwrite: true,
