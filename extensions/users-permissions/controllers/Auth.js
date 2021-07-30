@@ -140,7 +140,6 @@ module.exports = {
         const token = strapi.plugins["users-permissions"].services.jwt.issue({
           id: user.id,
         });
-        console.log("token before ctx.cookies.set: ", token);
         console.log("*** process.env: ", process.env);
         ctx.cookies.set("token", token, {
           httpOnly: true,
@@ -153,8 +152,8 @@ module.exports = {
           // domain: process.env.NODE_ENV === "development" ? process.env.PRODUCTION_URL : "localhost",
           domain: 'ondigitalocean.app',
           secure: false,
-          sameSite: "none",
-          // overwrite: true,
+          sameSite: true,
+          overwrite: true,
         });
 
         ctx.send({
