@@ -17,7 +17,7 @@
     "to": {
       "type": "date"
     },
-    "provide": {
+    "provider": {
       "type": "string"
     },
     "skills": {
