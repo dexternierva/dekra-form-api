@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trainings",
+  "info": {
+    "name": "Training",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "string"
+    },
+    "user": {
+      "via": "trainings",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

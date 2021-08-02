@@ -63,6 +63,10 @@
       "collection": "education",
       "via": "user"
     },
+    "trainings": {
+      "collection": "training",
+      "via": "user"
+    },
     "firstname": {
       "type": "string",
       "required": true

@@ -15,8 +15,6 @@ module.exports = async (ctx, next) => {
     const token = ctx.cookies.get("token");
     if (token) {
       ctx.request.header.authorization = "Bearer " + token;
-    } else {
-      console.log("TOKEN DOES NOT EXIST IN PERMISSIONS.JS!!!", token);
     }
   }
   /** END OF CUSTOMIZATION */
