@@ -140,7 +140,7 @@ module.exports = {
         const token = strapi.plugins["users-permissions"].services.jwt.issue({
           id: user.id,
         });
-        console.log("*** process.env: ", process.env);
+
         ctx.cookies.set("token", token, {
             httpOnly: true,
             secure: process.env.NODE_ENV === "development" ? true : false,
@@ -155,8 +155,6 @@ module.exports = {
             model: strapi.query('user', 'users-permissions').model,
           }),
         });
-
-        console.log("token variable inside Auth.js: ", token);
 
         /** END OF CUSTOMIZATION */
       }
